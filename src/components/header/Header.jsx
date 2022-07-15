@@ -14,7 +14,7 @@ const Header = () => {
         </ul>
       </div>
       <div className='flex items-center'>
-          <h5 className='mr-6'>Order for $249</h5>
+          <h5 className='mr-6 text-[#6b5a78] text-base'>Order for $249</h5>
           <button className='bg-[#654a9b] text-white px-6 py-3 font-bold rounded-md'>Pre Order</button>
       </div>
     </div>
