@@ -25,7 +25,6 @@ const Footer = () => {
         <ul className="flex items-center">
           <li className="mr-6 text-[#210545] text-sm">
             <a href="/">Privacy Policy</a>
-           
           </li>
           <li className="mr-6 text-[#210545] text-sm">
             <a href="/">Terms of Use</a>
