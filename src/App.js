@@ -5,6 +5,7 @@ import Connected from "./components/connected/Connected.jsx";
 import Faq from "./components/FAQ/Faq.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
+import Incredible from "./components/Incredible/Incredible .jsx";
 import Wonder from "./components/wonder/Wonder.jsx";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Banner />
       <Headline />
+      <Incredible />
       <Wonder />
       <Faq />
       <Connected />
