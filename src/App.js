@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./components/Banner/Banner.jsx";
 import Headline from "./components/Banner/Headline.jsx";
 import Connected from "./components/connected/Connected.jsx";
+import Faq from "./components/FAQ/Faq.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Banner />
       <Headline />
+      <Faq />
       <Connected />
       <Footer />
     </div>
