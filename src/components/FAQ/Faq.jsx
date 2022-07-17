@@ -4,8 +4,13 @@ import data from "../../utilities/faq.js";
 const Faq = () => {
   const [active, setActive] = useState(null);
   return (
-    <div className="accordion flex flex-col items-center justify-center px-12 mx-auto">
-      <h2 className="text-center text-5xl text-primary font-medium py-8">FAQs</h2>
+    <div
+      id="faq"
+      className="accordion flex flex-col items-center justify-center px-12 py-24 mx-auto"
+    >
+      <h2 className="text-center text-5xl text-primary font-medium py-8">
+        FAQs
+      </h2>
       {data.map((faq, i) => (
         <div
           key={faq.id}
