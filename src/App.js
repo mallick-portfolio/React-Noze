@@ -11,6 +11,7 @@ import Reality from "./components/reality/Reality.jsx";
 import TheMold from "./components/theMold/TheMold.jsx";
 import Wonder from "./components/wonder/Wonder.jsx";
 import TheVirus from "./components/theVirus/TheVirus.jsx";
+import Ordinary from "./components/ordinary/Ordinary.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Banner />
       <Headline />
+      <Ordinary />
       <TheVirus />
       <TheMold />
       <Monitor />
