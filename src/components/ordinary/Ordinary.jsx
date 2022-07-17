@@ -72,7 +72,7 @@ const Ordinary = () => {
           {show1 && !show2 ? (
             <div className="duration-500 transition-all">
               <img
-                className="rounded-full w-[450px] h-[450px]"
+                className="rounded-full ml-8 w-[420px] h-[420px]"
                 src={about}
                 alt=""
               />
