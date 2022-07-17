@@ -8,6 +8,7 @@ import Header from "./components/header/Header.jsx";
 import Incredible from "./components/Incredible/Incredible .jsx";
 import Monitor from "./components/monitor/Monitor.jsx";
 import Reality from "./components/reality/Reality.jsx";
+import TheMold from "./components/theMold/TheMold.jsx";
 import Wonder from "./components/wonder/Wonder.jsx";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Banner />
       <Headline />
+      <TheMold />
       <Monitor />
       <Reality />
       <Incredible />
