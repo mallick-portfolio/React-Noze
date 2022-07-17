@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
+import SpaceBanner from "../../components/SpaceBanner/SpaceBanner.jsx";
 const Space = () => {
   return (
-    <div>
-      <div>
-        <img src="" alt="" />
-      </div>
-    </div>
-  )
-}
+    <>
+      <SpaceBanner />
+    </>
+  );
+};
 
-export default Space
+export default Space;

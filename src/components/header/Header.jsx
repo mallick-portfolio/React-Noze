@@ -13,7 +13,7 @@ const Header = () => {
             <NavLink to="/">Overview</NavLink>
           </li>
           <li className="ml-8 text-base text-[#b9b0e4]">
-            <NavLink to="/">Specs</NavLink>
+            <NavLink to="/space">Specs</NavLink>
           </li>
           <li className="ml-8 text-base text-[#b9b0e4]">
             <NavLink to="/faq">FAQs</NavLink>
