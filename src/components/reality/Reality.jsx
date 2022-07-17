@@ -34,7 +34,7 @@ function Reality() {
         src={vi}
         width={"100%"}
         height={"100px"}
-        playsinline={true}
+        playsInline={true}
         preload="auto"
         muted="muted"
       ></video>

@@ -6,6 +6,7 @@ import Faq from "./components/FAQ/Faq.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 import Incredible from "./components/Incredible/Incredible .jsx";
+import Monitor from "./components/monitor/Monitor.jsx";
 import Reality from "./components/reality/Reality.jsx";
 import Wonder from "./components/wonder/Wonder.jsx";
 
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Banner />
       <Headline />
+      <Monitor />
       <Reality />
       <Incredible />
       <Wonder />
