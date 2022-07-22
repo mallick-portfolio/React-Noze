@@ -8,55 +8,80 @@ import matter6 from "../../assets/images/matters6.png";
 import matter7 from "../../assets/images/matters7.png";
 import matter8 from "../../assets/images/matters8.png";
 import matter9 from "../../assets/images/matters9.png";
+import Scrollspy from "react-scrollspy";
 const Monitor = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="px-24 mx-auto">
-      <div className="text-center py-16">
-        <h1 className="text-5xl text-primary mb-12 font-medium">
-          What's more important, form <br />
-          or function?
-        </h1>
-        <p className="text-secondary">
-          We didn’t think it was fair to have to choose.
-        </p>
-      </div>
-      <div className="flex items-center ">
-        <div className="basis-1/4">
-          <ul>
-            {data.map((d) => (
-              <li
-                onClick={() => setActive(d.id)}
-                className={`${
-                  active === d.id ? "text-[#2c0a59]" : "text-[#d0cbe6]"
-                } text-xl font-medium mb-2`}
-                key={d.id}
+    <>
+      <div className="px-24 mx-auto">
+        <div className="text-center py-16">
+          <h1 className="text-5xl text-primary mb-12 font-medium">
+            What's more important, form <br />
+            or function?
+          </h1>
+          <p className="text-secondary">
+            We didn’t think it was fair to have to choose.
+          </p>
+        </div>
+        <div className="flex items-center ">
+          <div className="basis-1/4">
+            <ul>
+              <Scrollspy
+                items={[
+                  "one",
+                  "two",
+                  "three",
+                  "four",
+                  "five",
+                  "six",
+                  "seven",
+                  "eight",
+                  "nine",
+                ]}
+                currentClassName="active"
               >
-                <a href={`#id${d.id}`}>{d.headline}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="basis-3/4 snap-y snap-mandatory h-[554px] overflow-scroll no-scrollbar">
-          {data.map((d) => (
-            <div key={d.id} id={`id${d.id}`} className="snap-start relative">
-              <img className="rounded-full" src={matter1} alt="" />
-              <div className="absolute left-0 right-0 top-[20%] w-2/3 text-center mx-auto">
-                <h2 className="text-4xl text-white">{d.title}</h2>
-                <p className="text-lg mt-32 text-white">{d.des}</p>
+                {data.map((d) => (
+                  <li
+                    onClick={() => setActive(d.id)}
+                    className={`${
+                      active === d.id
+                        ? "text-[#2c0a59] active"
+                        : "text-[#d0cbe6]"
+                    } text-xl font-medium mb-2`}
+                    key={d.id}
+                  >
+                    <a href={`#${d.dataName}`}>{d.headline}</a>
+                  </li>
+                ))}
+              </Scrollspy>
+            </ul>
+          </div>
+          <div className="basis-3/4 snap-y snap-mandatory h-[554px] overflow-scroll no-scrollbar">
+            {data.map((d) => (
+              <div
+                key={d.id}
+                id={`${d.dataName}`}
+                className="snap-start relative"
+              >
+                <img className="rounded-full" src={matter1} alt="" />
+                <div className="absolute left-0 right-0 top-[20%] w-2/3 text-center mx-auto">
+                  <h2 className="text-4xl text-white">{d.title}</h2>
+                  <p className="text-lg mt-32 text-white">{d.des}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
 const data = [
   {
     id: 1,
+    dataName: "first",
     headline: "Carbon Dioxide",
     title: "Clouds our thinking, lowers productivity & affects our sleep",
     img: matter1,
@@ -64,6 +89,7 @@ const data = [
   },
   {
     id: 2,
+    dataName: "two",
     headline: "Ammonia",
     title:
       "Irritates our noses and throats, amplifies allergies & triggers asthma.",
@@ -72,6 +98,7 @@ const data = [
   },
   {
     id: 3,
+    dataName: "three",
     headline: "Formaldehyde",
     title:
       "Irritates the eyes, nose, throat & skin - and is often linked to cancer.",
@@ -80,6 +107,7 @@ const data = [
   },
   {
     id: 4,
+    dataName: "four",
     headline: "Nitrogen Dioxide",
     title: "Causes permanent damage to our respiratory system.",
     img: matter4,
@@ -87,6 +115,7 @@ const data = [
   },
   {
     id: 5,
+    dataName: "five",
     headline: "Butanal",
     title: "Irritates our lungs causing coughing and shortness of breath.",
     img: matter5,
@@ -94,6 +123,7 @@ const data = [
   },
   {
     id: 6,
+    dataName: "six",
     headline: "Particulate Matter",
     title:
       "Irritates our lungs, aggravates allergies & can increase virus spread.",
@@ -102,6 +132,7 @@ const data = [
   },
   {
     id: 7,
+    dataName: "seven",
     headline: "Ethanol",
     title: "Causes headaches, nausea & irritates our lungs.",
     img: matter7,
@@ -109,6 +140,7 @@ const data = [
   },
   {
     id: 8,
+    dataName: "eight",
     headline: "Tobacco Odour",
     title: "Seeps into furniture and can linger in a space for a long time.",
     img: matter8,
@@ -116,6 +148,7 @@ const data = [
   },
   {
     id: 9,
+    dataName: "nine",
     headline: "Humidity",
     title:
       "Causes mold growth that triggers asthma & irritates our ears, nose and throat.",
