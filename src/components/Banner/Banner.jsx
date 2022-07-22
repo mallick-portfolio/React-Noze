@@ -2,12 +2,12 @@ import React from "react";
 import banner from "../../assets/images/banner.png";
 const Banner = () => {
   return (
-    <div className="xl:px-12 lg:px-8 lg:py-16 py-8 mx-auto flex justify-between gap-16">
-      <div className="w-1/2 px-8 mt-24">
-        <h1 className="lg:text-5xl font-medium text-primary">
+    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 lg:py-16 md:py-12 mx-auto flex justify-between gap-16">
+      <div className="w-1/2 px-8 lg:mt-24 md:mt-12">
+        <h1 className="xl:text-5xl lg:text-4xl md:text-3xl font-medium text-primary">
           There’s something <br /> new in the air
         </h1>
-        <p className="text-secondary my-8 text-lg">
+        <p className="text-secondary lg:my-8 md:my-4 lg:text-lg md:text-sm">
           NOZE is an AI powered air quality monitor that works to keep you safe.
           Breathe easy.
         </p>

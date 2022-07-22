@@ -4,7 +4,7 @@ import phone2 from "../../assets/images/phone2.png";
 import phone3 from "../../assets/images/phone3.png";
 const Incredible = () => {
   return (
-    <div className="xl:px-12 lg:px-8 my-8 mx-auto flex items-center justify-between gap-16">
+    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 my-8 mx-auto lg:flex items-center justify-between gap-16">
       <div className="w-2/5 scroll-smooth">
         <h1 className="text-5xl font-medium text-primary">
           Incredible <br /> power, right <br /> under your <br /> NOZE
@@ -47,12 +47,14 @@ const Incredible = () => {
             src={phone3}
             alt="Banner"
           />
-           <div className="mt-8">
+          <div className="mt-8">
             <h4 className="text-xl font-bold text-black">Share it.</h4>
             <p>
-            Let others see what’s in the air<br />
-            before they come inside by<br />
-            sharing access to your Noze.
+              Let others see what’s in the air
+              <br />
+              before they come inside by
+              <br />
+              sharing access to your Noze.
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <div
       id="faq"
-      className="accordion flex flex-col items-center justify-center px-12 py-6 mx-auto"
+      className="accordion flex flex-col items-center justify-center px-12 py-6  mx-auto"
     >
       <h2 className="text-center text-5xl text-primary font-medium py-8">
         FAQs

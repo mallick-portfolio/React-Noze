@@ -13,9 +13,9 @@ const Monitor = () => {
 
   return (
     <>
-      <div className="xl:px-12 lg:px-8 my-12 mx-auto">
-        <div className="text-center py-16">
-          <h1 className="text-5xl text-primary mb-12 font-medium">
+      <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 my-12 mx-auto">
+        <div className="text-center lg:py-16 md:py-8">
+          <h1 className="xl:text-5xl lg:text-4xl md:text-3xl text-primary lg:mb-12 mb-4 font-medium">
             What's more important, form <br />
             or function?
           </h1>
@@ -23,23 +23,33 @@ const Monitor = () => {
             We didn’t think it was fair to have to choose.
           </p>
         </div>
-        <div className="flex items-center ">
-          <div className="basis-1/4">
+        <div className="flex flex-col-reverse lg:flex-row items-center ">
+          <div className="lg:basis-1/4">
             <ul>
               {data.map((d) => (
                 <li
                   onClick={() => setActive(d.id)}
                   className={`${
-                    active === d.id ? "text-[#2c0a59] active" : "text-[#d0cbe6]"
+                    active === d.id
+                      ? "text-[#2c0a59] active"
+                      : "text-[#d0cbe6] lg:block hidden"
                   } text-xl font-medium mb-2`}
                   key={d.id}
                 >
-                  <a href={`#${d.dataName}`}>{d.headline}</a>
+                  <a className="lg:block hidden" href={`#${d.dataName}`}>
+                    {d.headline}
+                  </a>
+                  <a
+                    className="block lg:hidden w-4 h-4 bg-red-500 rounded-full mt-4"
+                    href={`#${d.dataName}`}
+                  >
+                    {""}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="basis-3/4 snap-y snap-mandatory lg:h-[445px] xl:h-[590px] overflow-hidden">
+          <div className="lg:basis-3/4 snap-y snap-mandatory md:h-[460px] lg:h-[445px] xl:h-[590px] overflow-hidden">
             {data.map((d) => (
               <div
                 key={d.id}
@@ -49,7 +59,7 @@ const Monitor = () => {
                 <img className="rounded-full" src={d.img} alt="" />
                 <div className="absolute left-0 right-0 top-[20%] w-2/3 text-center mx-auto">
                   <h2 className="text-4xl text-white">{d.title}</h2>
-                  <p className="text-lg mt-32 text-white">{d.des}</p>
+                  <p className="text-lg lg:mt-32 mt-12 text-white">{d.des}</p>
                 </div>
               </div>
             ))}

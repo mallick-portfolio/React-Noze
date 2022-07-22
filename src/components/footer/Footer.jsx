@@ -4,7 +4,7 @@ import tw from "../../assets/images/twitter.svg";
 import ig from "../../assets/images/ig.svg";
 const Footer = () => {
   return (
-    <div className="px-12 py-8 mx-auto flex justify-between items-center bg-[#f6f5fa]">
+    <div className="px-12 py-8 mx-auto flex lg:flex-row flex-col-reverse gap-6 lg:gap-0 justify-between items-center bg-[#f6f5fa]">
       <div>
         <ul className="flex items-center">
           <li>

@@ -15,12 +15,12 @@ const TheMold = () => {
     });
   }, []);
   return (
-    <div className="xl:px-12 lg:px-8 py-24 mx-auto flex justify-between items-center">
+    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 py-24 mx-auto flex justify-between items-center">
       <div className="w-1/2 pr-24">
-        <h1 className="text-primary lg:text-4xl xl:text-5xl font-medium mb-12">
+        <h1 className="text-primary lg:text-4xl xl:text-5xl md:text-3xl font-medium mb-12">
           Break the Mold
         </h1>
-        <p className="text-secondary text-lg">
+        <p className="text-secondary lg:text-lg text-sm">
           NOZE monitors the air for spores and other markers associated with the
           most common types of indoor mold. Our mold index will tell you if it's
           likely that there’s mold around and whether your space is in danger of

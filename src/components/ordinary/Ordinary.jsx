@@ -17,12 +17,12 @@ const Ordinary = () => {
     }, 5000);
   }, [show1, show2]);
   return (
-    <div className="xl:px-12 lg:px-8 gap-6 my-24 mx-auto flex justify-between items-center">
+    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 gap-6 my-24 mx-auto flex justify-between items-center">
       <div className="w-1/2 my-6">
-        <h1 className="text-primary lg:text-4xl xl:text-5xl font-medium ">
+        <h1 className="text-primary md:text-3xl lg:text-4xl xl:text-5xl font-medium ">
           Anything but ordinary.
         </h1>
-        <p className="text-secondary text-lg mt-4">
+        <p className="text-secondary lg:text-lg text-sm mt-4">
           Some would say it's out of this world. That’s not far off.
         </p>
         <div className="mt-6">
@@ -71,7 +71,7 @@ const Ordinary = () => {
           {show1 && !show2 ? (
             <div className="duration-500 transition-all">
               <img
-                className="rounded-full ml-8 w-[420px] h-[420px]"
+                className="rounded-full ml-8 w-[320px] h-[320px] lg:w-[420px] lg:h-[420px]"
                 src={about}
                 alt=""
               />
@@ -80,7 +80,9 @@ const Ordinary = () => {
             <div className="duration-500 transition-all">
               <video
                 loop={true}
-                src={"https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/m_about1.mp4"}
+                src={
+                  "https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/m_about1.mp4"
+                }
                 autoPlay={true}
                 width={"100%"}
                 height={"100px"}

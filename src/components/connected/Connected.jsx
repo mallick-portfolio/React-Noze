@@ -3,7 +3,7 @@ import React from "react";
 const Connected = () => {
   return (
     <div className="xl:px-12 lg:px-8 py-28 mx-auto text-center">
-      <h2 className="text-primary lg:text-4xl xl:text-5xl font-medium">
+      <h2 className="text-primary md:text-3xl lg:text-4xl xl:text-5xl font-medium">
         Stay connected with NOZE
       </h2>
       <p className="text-secondary mt-6 mb-8 text-lg">
