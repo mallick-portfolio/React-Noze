@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import { NavLink, Link } from "react-router-dom";
 import Cart from "../cart/Cart.jsx";
-const Header = ({show, setShow}) => {
-
+const Header = () => {
+  const [show, setShow] = useState(false);
   const [data, setData] = useState(null);
   useEffect(() => {
     const data = localStorage.getItem("item");

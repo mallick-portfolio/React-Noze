@@ -10,8 +10,8 @@ const TheMold = () => {
       trigger: el,
       start: "top center",
       end: "bottom center",
-      onEnter: () => el.play(),
-      onEnterBack: () => el.play(),
+      // onEnter: () => el.play(),
+      // onEnterBack: () => el.play(),
     });
   }, []);
   return (

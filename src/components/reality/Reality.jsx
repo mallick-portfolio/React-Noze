@@ -12,10 +12,10 @@ function Reality() {
       start: "top center",
       end: "bottom center",
 
-      onEnter: () => el.play(),
-      onEnterBack: () => el.play(),
-      onLeave: () => el.pause(),
-      onLeaveBack: () => el.pause(),
+      // onEnter: () => el.play(),
+      // onEnterBack: () => el.play(),
+      // onLeave: () => el.pause(),
+      // onLeaveBack: () => el.pause(),
     });
   }, []);
   return (
