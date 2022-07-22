@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import vi from "../../assets/video/m_about1.mp4";
 import about from "../../assets/images/about2.gif";
 const Ordinary = () => {
   const [show1, setShow1] = useState(true);
@@ -18,9 +17,9 @@ const Ordinary = () => {
     }, 5000);
   }, [show1, show2]);
   return (
-    <div className="px-12 gap-6 my-24 mx-auto flex justify-between items-center">
+    <div className="xl:px-12 lg:px-8 gap-6 my-24 mx-auto flex justify-between items-center">
       <div className="w-1/2 my-6">
-        <h1 className="text-primary text-5xl font-medium ">
+        <h1 className="text-primary lg:text-4xl xl:text-5xl font-medium ">
           Anything but ordinary.
         </h1>
         <p className="text-secondary text-lg mt-4">
@@ -81,7 +80,7 @@ const Ordinary = () => {
             <div className="duration-500 transition-all">
               <video
                 loop={true}
-                src={vi}
+                src={"https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/m_about1.mp4"}
                 autoPlay={true}
                 width={"100%"}
                 height={"100px"}

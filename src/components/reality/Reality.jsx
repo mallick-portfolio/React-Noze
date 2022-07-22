@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import vi from "../../assets/video/WALP.mp4";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 function Reality() {
   const videoRef = useRef(null);
@@ -12,16 +11,16 @@ function Reality() {
       start: "top center",
       end: "bottom center",
 
-      // onEnter: () => el.play(),
-      // onEnterBack: () => el.play(),
-      // onLeave: () => el.pause(),
-      // onLeaveBack: () => el.pause(),
+      onEnter: () => el.play(),
+      onEnterBack: () => el.play(),
+      onLeave: () => el.pause(),
+      onLeaveBack: () => el.pause(),
     });
   }, []);
   return (
     <>
       <div className="text-center py-8">
-        <h1 className="text-5xl text-primary mb-12 font-medium">
+        <h1 className="lg:text-4xl xl:text-5xl text-primary mb-12 font-medium">
           What's more important, form <br />
           or function?
         </h1>
@@ -31,7 +30,7 @@ function Reality() {
       </div>
       <video
         ref={videoRef}
-        src={vi}
+        src={"https://getnoze.com/wp-content/uploads/2021/08/WALP.mp4"}
         width={"100%"}
         height={"100px"}
         playsInline={true}

@@ -4,7 +4,7 @@ import phone2 from "../../assets/images/phone2.png";
 import phone3 from "../../assets/images/phone3.png";
 const Incredible = () => {
   return (
-    <div className="px-12 mx-auto flex items-center justify-between gap-16">
+    <div className="xl:px-12 lg:px-8 my-8 mx-auto flex items-center justify-between gap-16">
       <div className="w-2/5 scroll-smooth">
         <h1 className="text-5xl font-medium text-primary">
           Incredible <br /> power, right <br /> under your <br /> NOZE
@@ -26,7 +26,7 @@ const Incredible = () => {
             </p>
           </div>
         </div>
-        <div className="rounded-full text-center w-[330px] h-[350px]  bg-[#d0cbe6] mt-16 ml-64">
+        <div className="rounded-full text-center w-[330px] h-[350px]  bg-[#d0cbe6] mt-16 lg:ml-36 xl:ml-64">
           <img
             className="py-8 w-[250px] h-[330px] mx-auto"
             src={phone2}

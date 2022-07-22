@@ -10,14 +10,14 @@ const TheMold = () => {
       trigger: el,
       start: "top center",
       end: "bottom center",
-      // onEnter: () => el.play(),
-      // onEnterBack: () => el.play(),
+      onEnter: () => el.play(),
+      onEnterBack: () => el.play(),
     });
   }, []);
   return (
-    <div className="px-12 py-24 mx-auto flex justify-between items-center">
+    <div className="xl:px-12 lg:px-8 py-24 mx-auto flex justify-between items-center">
       <div className="w-1/2 pr-24">
-        <h1 className="text-primary text-5xl font-medium mb-12">
+        <h1 className="text-primary lg:text-4xl xl:text-5xl font-medium mb-12">
           Break the Mold
         </h1>
         <p className="text-secondary text-lg">

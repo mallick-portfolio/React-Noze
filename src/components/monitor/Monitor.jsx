@@ -13,7 +13,7 @@ const Monitor = () => {
 
   return (
     <>
-      <div className="px-24 mx-auto">
+      <div className="xl:px-12 lg:px-8 my-12 mx-auto">
         <div className="text-center py-16">
           <h1 className="text-5xl text-primary mb-12 font-medium">
             What's more important, form <br />
@@ -39,7 +39,7 @@ const Monitor = () => {
               ))}
             </ul>
           </div>
-          <div className="basis-3/4 snap-y snap-mandatory h-[554px] overflow-hidden">
+          <div className="basis-3/4 snap-y snap-mandatory lg:h-[445px] xl:h-[590px] overflow-hidden">
             {data.map((d) => (
               <div
                 key={d.id}

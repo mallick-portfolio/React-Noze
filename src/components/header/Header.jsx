@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <div className="px-12 mx-auto flex justify-between items-center py-2 border-b border-[#b9b0e4] fixed w-full top-0 z-50 bg-white">
+    <div className="xl:px-12 lg:px-8 mx-auto flex justify-between items-center py-2 border-b border-[#b9b0e4] fixed w-full top-0 z-50 bg-white">
       <div className="flex items-center">
         <div>
           <Link to={"/"}>
