@@ -13,7 +13,7 @@ const Monitor = () => {
 
   return (
     <>
-      <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 my-12 mx-auto">
+      <div className="xl:px-12 px-8 my-12 mx-auto">
         <div className="text-center lg:py-16 md:py-8">
           <h1 className="xl:text-5xl lg:text-4xl md:text-3xl text-primary lg:mb-12 mb-4 font-medium">
             What's more important, form <br />
@@ -49,7 +49,7 @@ const Monitor = () => {
               ))}
             </ul>
           </div>
-          <div className="lg:basis-3/4 snap-y snap-mandatory md:h-[460px] lg:h-[445px] xl:h-[590px] overflow-hidden">
+          <div className="lg:basis-3/4 snap-y snap-mandatory h-[230px] md:h-[460px] lg:h-[445px] xl:h-[590px] overflow-hidden">
             {data.map((d) => (
               <div
                 key={d.id}
@@ -58,8 +58,8 @@ const Monitor = () => {
               >
                 <img className="rounded-full" src={d.img} alt="" />
                 <div className="absolute left-0 right-0 top-[20%] w-2/3 text-center mx-auto">
-                  <h2 className="text-4xl text-white">{d.title}</h2>
-                  <p className="text-lg lg:mt-32 mt-12 text-white">{d.des}</p>
+                  <h2 className="xl:text-4xl lg:text-3xl text-xl text-white">{d.title}</h2>
+                  <p className="sm:text-lg text-xs mt-2 lg:mt-32 md:mt-12 text-white">{d.des}</p>
                 </div>
               </div>
             ))}

@@ -20,7 +20,7 @@ function Reality() {
   return (
     <>
       <div className="text-center py-8">
-        <h1 className="lg:text-4xl xl:text-5xl text-primary mb-12 font-medium">
+        <h1 className="lg:text-4xl xl:text-5xl text-3xl text-primary mb-12 font-medium">
           What's more important, form <br />
           or function?
         </h1>

@@ -17,8 +17,8 @@ const Ordinary = () => {
     }, 5000);
   }, [show1, show2]);
   return (
-    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 gap-6 my-24 mx-auto flex justify-between items-center">
-      <div className="w-1/2 my-6">
+    <div className="xl:px-12 px-8  gap-6 my-24 mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <div className="sm:w-1/2 my-6 w-auto">
         <h1 className="text-primary md:text-3xl lg:text-4xl xl:text-5xl font-medium ">
           Anything but ordinary.
         </h1>
@@ -66,12 +66,12 @@ const Ordinary = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="sm:w-1/2 w-auto">
         <div>
           {show1 && !show2 ? (
             <div className="duration-500 transition-all">
               <img
-                className="rounded-full ml-8 w-[320px] h-[320px] lg:w-[420px] lg:h-[420px]"
+                className="rounded-full sm:ml-8 md:w-[320px] md:h-[320px] lg:w-[420px] lg:h-[420px]"
                 src={about}
                 alt=""
               />

@@ -15,8 +15,8 @@ const TheMold = () => {
     });
   }, []);
   return (
-    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 py-24 mx-auto flex justify-between items-center">
-      <div className="w-1/2 pr-24">
+    <div className="xl:px-12 px-8 py-24 mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <div className="sm:w-1/2 w-auto sm:pr-24">
         <h1 className="text-primary lg:text-4xl xl:text-5xl md:text-3xl font-medium mb-12">
           Break the Mold
         </h1>
@@ -27,7 +27,7 @@ const TheMold = () => {
           being a breeding ground.
         </p>
       </div>
-      <div className="w-1/2">
+      <div className="sm:w-1/2 w-auto">
         <video
           ref={videoRef}
           src={

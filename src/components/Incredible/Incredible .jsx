@@ -4,14 +4,14 @@ import phone2 from "../../assets/images/phone2.png";
 import phone3 from "../../assets/images/phone3.png";
 const Incredible = () => {
   return (
-    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 my-8 mx-auto lg:flex items-center justify-between gap-16">
-      <div className="w-2/5 scroll-smooth">
+    <div className="xl:px-12 px-8 my-8 mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
+      <div className="lg:w-2/5 w-full scroll-smooth">
         <h1 className="text-5xl font-medium text-primary">
           Incredible <br /> power, right <br /> under your <br /> NOZE
         </h1>
       </div>
 
-      <div className="w-3/5 flex flex-col gap-5 h-[600px] overflow-auto no-scrollbar">
+      <div className="lg:w-3/5 w-full flex flex-col gap-5 h-[600px] overflow-auto no-scrollbar">
         <div className="rounded-full text-center w-[330px] h-[350px]  bg-[#d0cbe6] mb-8">
           <img
             className="py-8 w-[250px] h-[330px] mx-auto"

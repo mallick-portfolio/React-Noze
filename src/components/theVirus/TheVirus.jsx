@@ -15,8 +15,8 @@ const TheMold = () => {
     });
   }, []);
   return (
-    <div className="xl:px-12 lg:px-8 md:px-6 sm:px-4 gap-6 py-24 mx-auto flex justify-between items-center">
-      <div className="w-1/2">
+    <div className="xl:px-12 px-8 gap-6 py-24 mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <div className="sm:w-1/2 w-full">
         <video
           ref={videoRef}
           src={
@@ -29,8 +29,8 @@ const TheMold = () => {
           muted="muted"
         ></video>
       </div>
-      <div className="w-1/2">
-        <h1 className="text-primary md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-12">
+      <div className="sm:w-1/2 w-full">
+        <h1 className="text-primary text-3xl lg:text-4xl xl:text-5xl font-medium mb-12">
           Сonquer the Virus
         </h1>
         <p className="text-secondary lg:text-lg text-sm">
