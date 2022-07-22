@@ -10,7 +10,7 @@ import matter8 from "../../assets/images/matters8.png";
 import matter9 from "../../assets/images/matters9.png";
 import Scrollspy from "react-scrollspy";
 const Monitor = () => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
 
   return (
     <>
@@ -57,14 +57,14 @@ const Monitor = () => {
               </Scrollspy>
             </ul>
           </div>
-          <div className="basis-3/4 snap-y snap-mandatory h-[554px] overflow-scroll no-scrollbar">
+          <div className="basis-3/4 snap-y snap-mandatory h-[554px] overflow-hidden">
             {data.map((d) => (
               <div
                 key={d.id}
                 id={`${d.dataName}`}
                 className="snap-start relative"
               >
-                <img className="rounded-full" src={matter1} alt="" />
+                <img className="rounded-full" src={d.img} alt="" />
                 <div className="absolute left-0 right-0 top-[20%] w-2/3 text-center mx-auto">
                   <h2 className="text-4xl text-white">{d.title}</h2>
                   <p className="text-lg mt-32 text-white">{d.des}</p>
