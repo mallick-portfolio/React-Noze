@@ -8,7 +8,6 @@ import matter6 from "../../assets/images/matters6.png";
 import matter7 from "../../assets/images/matters7.png";
 import matter8 from "../../assets/images/matters8.png";
 import matter9 from "../../assets/images/matters9.png";
-import Scrollspy from "react-scrollspy";
 const Monitor = () => {
   const [active, setActive] = useState(1);
 
@@ -27,34 +26,17 @@ const Monitor = () => {
         <div className="flex items-center ">
           <div className="basis-1/4">
             <ul>
-              <Scrollspy
-                items={[
-                  "one",
-                  "two",
-                  "three",
-                  "four",
-                  "five",
-                  "six",
-                  "seven",
-                  "eight",
-                  "nine",
-                ]}
-                currentClassName="active"
-              >
-                {data.map((d) => (
-                  <li
-                    onClick={() => setActive(d.id)}
-                    className={`${
-                      active === d.id
-                        ? "text-[#2c0a59] active"
-                        : "text-[#d0cbe6]"
-                    } text-xl font-medium mb-2`}
-                    key={d.id}
-                  >
-                    <a href={`#${d.dataName}`}>{d.headline}</a>
-                  </li>
-                ))}
-              </Scrollspy>
+              {data.map((d) => (
+                <li
+                  onClick={() => setActive(d.id)}
+                  className={`${
+                    active === d.id ? "text-[#2c0a59] active" : "text-[#d0cbe6]"
+                  } text-xl font-medium mb-2`}
+                  key={d.id}
+                >
+                  <a href={`#${d.dataName}`}>{d.headline}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="basis-3/4 snap-y snap-mandatory h-[554px] overflow-hidden">
